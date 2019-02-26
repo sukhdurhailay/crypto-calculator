@@ -1,14 +1,17 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 
+import Main from '../views/main';
+
 const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #efefef;
+    background-color: #fff;
   }
 
   code {
@@ -16,11 +19,16 @@ const GlobalStyles = createGlobalStyle`
       monospace;
   }
 
+  * {
+    box-sizing: border-box;
+  }
+
 `;
 
 const AppStyled = styled.div`
   width: 100%;
   display: flex;
+  padding: 20px 40px;
 `;
 
 export default function App() {
@@ -28,7 +36,7 @@ export default function App() {
     <React.Fragment>
       <GlobalStyles />
       <AppStyled>
-        <h1>CryptoCalc</h1>
+        <Main />
       </AppStyled>
     </React.Fragment>
   );

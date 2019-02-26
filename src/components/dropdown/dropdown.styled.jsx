@@ -1,9 +1,21 @@
 import styled from 'styled-components';
 
-const DropdownStyled = styled.select`
+export const DropdownContainer = styled.div`
   width: 100%;
   max-width: 600px;
-  background-color: #fdef22;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
 `;
 
-export default DropdownStyled;
+export const DropdownStyled = styled.select`
+  width: 100%;
+  background-color: #fff;
+  height: 60px;
+  line-height: 60px;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  border: none;
+  padding: 20px 0;
+`;
